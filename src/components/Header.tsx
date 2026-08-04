@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Menu, Phone, X } from 'lucide-react'
-import { NAV_ITEMS, PHONE_DISPLAY, PHONE_HREF } from './site'
+import { LOGO_SRC, NAV_ITEMS, PHONE_DISPLAY, PHONE_HREF } from './site'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -25,7 +25,7 @@ export default function Header() {
       <a href="#hauptinhalt" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-white focus:px-5 focus:py-3 focus:font-semibold focus:text-[#A80000]">Zum Hauptinhalt springen</a>
       <div className="mx-auto flex h-24 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <a href="#" className="flex items-center gap-3" aria-label="Krankenfahrdienst Koschmann Ambulance – Startseite">
-          <img src="/assets/logo-header.png" alt="Logo Krankenfahrdienst Koschmann Ambulance" className="h-16 w-16 object-contain sm:h-[4.5rem] sm:w-[4.5rem] lg:h-20 lg:w-20" width="80" height="80" />
+          <img src={LOGO_SRC} alt="Logo Krankenfahrdienst Koschmann Ambulance" className="h-16 w-16 object-contain sm:h-[4.5rem] sm:w-[4.5rem] lg:h-20 lg:w-20" width="80" height="80" />
           <span className="flex flex-col leading-tight">
             <span className="text-sm font-bold tracking-tight text-[#1D1D1F] sm:text-base">Koschmann Ambulance</span>
             <span className="text-[0.65rem] font-medium uppercase tracking-wider text-[#A80000] sm:text-xs sm:tracking-widest">KRANKENFAHRDIENST · ESSEN UND UMGEBUNG</span>

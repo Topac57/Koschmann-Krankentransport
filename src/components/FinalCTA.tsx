@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
 import { CalendarCheck, Phone } from 'lucide-react'
 import { BrandLines } from './Decorations'
-import { EMAIL, PHONE_DISPLAY, PHONE_HREF } from './site'
+import { EMAIL, LOGO_SRC, PHONE_DISPLAY, PHONE_HREF } from './site'
 
 export default function FinalCTA() {
   return (
     <section id="kontakt" className="relative scroll-mt-24 overflow-hidden bg-gradient-to-br from-[#4A0000] via-[#7A0000] to-[#A80000] py-20 sm:py-28" aria-labelledby="cta-heading">
       <BrandLines />
-      <img src="/assets/logo.jpeg" alt="" aria-hidden="true" className="pointer-events-none absolute -right-32 top-1/2 h-[30rem] w-[30rem] -translate-y-1/2 rounded-full object-contain opacity-10 mix-blend-screen" />
+      <img src={LOGO_SRC} alt="" aria-hidden="true" className="pointer-events-none absolute -right-40 top-1/2 h-auto w-[34rem] -translate-y-1/2 object-contain opacity-[0.07] sm:-right-28 sm:w-[42rem] lg:-right-20 lg:w-[48rem]" />
       <div aria-hidden="true" className="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-[#C5161D]/30 blur-3xl" />
       <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-80px' }} transition={{ duration: .6 }}>
