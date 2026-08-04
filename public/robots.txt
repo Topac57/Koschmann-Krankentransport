@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://koschmann-ambulance.de/sitemap.xml
